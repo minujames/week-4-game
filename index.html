@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Star Wars Game</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Gentium+Basic|Permanent+Marker" rel="stylesheet"> -->
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 character-section">
+        <section class="section-label">Your Character</section>
+        <section id="your-character" ></section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 character-section">
+        <section class="section-label">Enemies available to attack</section>
+        <section id="enemies"></section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 attack-section">
+        <section class="section-label">Fight section</section>
+        <button id="button-attack" class="btn btn-danger attack" value="attack">Attack</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 character-section">
+        <section class="section-label">Defender</section>
+        <section id="defender"></section>
+      </div>
+    </div>
+  </div>
+
+<!-- linking javascript file -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
