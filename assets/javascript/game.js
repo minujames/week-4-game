@@ -40,7 +40,7 @@ $(document).ready(function(){
       this.hero = null;
       this.enemies = null;
       this.defender = null;
-      
+
       var player1 = new Player("Luke Skywalker", 100, 6, 10, "luke.jpg");
       var player2 = new Player("Darth Maul", 120, 8, 15, "darth-maul.jpg");
       var player3 = new Player("Darth Vader", 150, 10, 20, "darth-vader.jpg");
@@ -138,7 +138,11 @@ $(document).ready(function(){
       {
         var isHeroWinner = this.hero.healthPoints > this.defender.healthPoints ? true : false;
         if(isHeroWinner){
-          if(Object.keys(this.enemies).length === 0){
+          if(this.hero.healthPoints <= 0){
+            message = "You lost all your health points. Press Restart to play again!";
+            this.toggleRestartButton();
+          }
+          else if(Object.keys(this.enemies).length === 0){
             message = "You Won! Press Restart to play again";
             this.toggleRestartButton();
           }
