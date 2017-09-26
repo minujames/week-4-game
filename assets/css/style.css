@@ -78,3 +78,11 @@ body{
   color: black;
   font-size: 15px;
 }
+
+.logo{
+  width: 50%;
+}
+
+.header-container{
+  text-align: center
+}
