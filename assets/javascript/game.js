@@ -37,6 +37,10 @@ $(document).ready(function(){
     },
 
     reset: function(){
+      this.hero = null;
+      this.enemies = null;
+      this.defender = null;
+      
       var player1 = new Player("Luke Skywalker", 100, 6, 10, "luke.jpg");
       var player2 = new Player("Darth Maul", 120, 8, 15, "darth-maul.jpg");
       var player3 = new Player("Darth Vader", 150, 10, 20, "darth-vader.jpg");
