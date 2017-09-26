@@ -3,12 +3,17 @@
 <head>
   <title>Star Wars Game</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Gentium+Basic|Permanent+Marker" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
 </head>
 <body>
+   <div class="container-flex header-container" style=" width: 100%; text-align: center">
+       <img src="assets/images/logo.png" style="width: 50%;">
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-12 character-section">
@@ -23,15 +28,21 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 attack-section">
-        <section class="section-label">Fight section</section>
-        <button id="button-attack" class="btn btn-danger attack" value="attack">Attack</button>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-md-12 character-section">
         <section class="section-label">Defender</section>
         <section id="defender"></section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 button-section">
+        <section class="section-label attak">Fight section</section>
+        <button id="button-attack" class="btn attack" value="attack">Attack</button>
+        <button id="button-restart" class="btn restart" value="restart">Restart</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 message-section">
+        <label class="message"></label>
       </div>
     </div>
   </div>
